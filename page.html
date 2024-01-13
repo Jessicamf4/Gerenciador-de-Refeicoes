@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Refeições</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Gerenciador de Refeições</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de Refeição</th>
+                    <th>Refeição</th>
+                    <th>Calorias</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="mealList">
+                <!-- Conteúdo da tabela será adicionado dinamicamente aqui -->
+            </tbody>
+        </table>
+        <div id="totalCalories">Total de Calorias: 0</div>
+        <div id="addMealForm">
+            <label for="mealType">Tipo de Refeição:</label>
+            <select id="mealType">
+                <option value="1">Café da Manhã</option>
+        <option value="2">Lanche</option>
+        <option value="3">Almoço</option>
+        <option value="4">Jantar</option>
+            </select>
+            <label for="mealName">Nome da Refeição:</label>
+            <input type="text" id="mealName" placeholder="Ex: Café da Manhã">
+            <label for="calories">Calorias:</label>
+            <input type="number" id="calories" placeholder="Ex: 300">
+            <button onclick="addMeal()">Adicionar Refeição</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
